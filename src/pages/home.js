@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 
 export default function Home() {
-  console.log(process.env.NODE_ENV);
   return (
     <main className='container mx-auto px-8 py-24'>
       <h1 className='text-6xl font-bold mb-2 text-center'>Hey, I'm Ajani.</h1>

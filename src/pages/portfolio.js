@@ -9,7 +9,6 @@ export default function Portfolio() {
     console.log(strapi_url);
     Axios.get(strapi_url + '/projects')
       .then((response) => {
-        console.log(response.data);
         setProjects(response.data);
       })
       .catch((err) => {
