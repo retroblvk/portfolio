@@ -25,6 +25,7 @@ export default function Navbar() {
               to='/about'
               activeClassName='border-b-2 border-grey-300'
               exact
+              onClick={handleClick}
             >
               About
             </NavLink>
