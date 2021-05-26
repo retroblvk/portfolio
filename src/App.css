@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --sm: 640px;
+  --md: 768px;
+  --lg: 1024px;
+  --xl: 1280px;
+  --space: 1.5em 0;
+  --space: 2em 0;
+}
+
+html,
+body {
+  font-family: 'roboto', sans-serif;
+}
+
+.site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-content {
+  flex: 1 0 auto;
+  padding: var(--space) var(--space) 0;
+  width: 100%;
+}
+
+.site-content:after {
+  content: '\00a0';
+  display: block;
+  margin-top: var(--space);
+  height: 0;
+  visibility: hidden;
+}
+
+p {
+  max-width: 500px;
+}
+
+.menu-icon span {
+  background: #000;
+  height: 0.2rem;
+  width: 33px;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.menu-icon span:last-of-type {
+  margin-bottom: 0;
+}
+
+.navbar-nav {
+  background: #000;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 4.4rem;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.navbar-nav li {
+  padding-top: 2rem;
+}
+
+.navbar-nav li:last-of-type {
+  padding-bottom: 2rem;
+}
+
+.navbar-nav a {
+  color: #fff;
+}
+
+.open-nav {
+  max-height: initial;
+}
+@media screen and (min-width: 768px) {
+  .menu-icon {
+    display: none;
+  }
+  .navbar-nav {
+    background: initial;
+    position: static;
+    flex-direction: row;
+    width: initial;
+    max-height: initial;
+  }
+  .navbar-nav li,
+  .navbar-nav li:last-of-type {
+    padding: initial;
+    height: initial;
+  }
+
+  .navbar-nav a {
+    color: initial;
+  }
+}
