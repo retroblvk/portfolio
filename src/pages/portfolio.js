@@ -24,10 +24,7 @@ export default function Portfolio() {
           projects.map((project, index) => (
             <div className='card' key={index}>
               <img
-                src={
-                  'http://localhost:1337' +
-                  project.projectImage[0].formats.medium.url
-                }
+                src={strapi_url + project.projectImage[0].formats.medium.url}
                 alt=''
                 className='mb-2'
               />
