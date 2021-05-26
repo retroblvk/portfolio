@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
 import Axios from 'axios';
+import strapi_url from './../helper';
 
 export default function Portfolio() {
   const [projects, setProjects] = useState(null);
   useEffect(() => {
     document.title = 'retroblvk | Portfolio';
-    Axios.get('http://localhost:1337/projects')
+    console.log(strapi_url);
+    Axios.get(strapi_url + '/projects')
       .then((response) => {
         console.log(response.data);
         setProjects(response.data);

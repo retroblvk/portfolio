@@ -34,6 +34,7 @@ export default function Navbar() {
             <NavLink
               activeClassName='border-b-2 border-grey-300'
               to='/portfolio'
+              onClick={handleClick}
             >
               Portfolio
             </NavLink>
