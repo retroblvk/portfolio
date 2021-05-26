@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import image from './../assets/img/code.jpg';
 export default function About() {
   return (
-    <main className='container mx-auto px-8 py-4'>
+    <main className='container mx-auto px-8'>
       <div className='md:flex'>
         <div className='md:w-6/12 md:mr-8 mb-4'>
           <img src={image} alt='' className='max-w-full' />
