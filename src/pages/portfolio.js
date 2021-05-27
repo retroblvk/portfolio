@@ -19,7 +19,7 @@ export default function Portfolio() {
     <main className='container mx-auto px-8 lg:px-20 py-2'>
       <h1 className='text-4xl font-bold'>Portfolio</h1>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:gap-1 md:gap-4 pt-8'>
-        {projects &&
+        {projects ? (
           projects.map((project, index) => (
             <div className='card shadow-2xl rounded-lg' key={index}>
               <h1 className='bg-custom-purple rounded-t-lg card-header text-lg px-4 py-4 font-bold'>
@@ -78,7 +78,15 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-          ))}
+          ))
+        ) : (
+          <>
+            <div></div>
+            <div class='mx-auto lds-heart'>
+              <div></div>
+            </div>
+          </>
+        )}
       </div>
     </main>
   );
