@@ -15,7 +15,7 @@ export default function Blog() {
       });
   }, []);
   return (
-    <main className='container mx-auto px-8 py-2'>
+    <main className='container mx-auto px-8 lg:px-20 py-2'>
       <h1 className='text-4xl font-bold'>My Blog</h1>
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-1 md:gap-4 pt-8'>
         {posts &&

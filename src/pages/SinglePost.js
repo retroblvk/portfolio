@@ -14,22 +14,10 @@ export default function SinglePost({ props }) {
       .catch((err) => console.log(err));
   }, [props]);
   return (
-    <main className='container mx-auto px-8 py-2'>
+    <main className='container mx-auto md:px-20 pt-4'>
       {post ? (
         <article className='post'>
-          <img
-            src={
-              process.env.NODE_ENV === 'development'
-                ? strapi_url + post.postImage.formats.small.url
-                : post.postImage.formats.small.url
-            }
-            alt=''
-            className='md:float-left  mr-8 w-full md:w-6/12 lg:w-5/12 mb-3'
-          />
-          <div>
-            <h1 className='text-4xl font-bold w-full mb-4'>{post.title}</h1>
-            {parse(post.content)}
-          </div>
+          <div>{parse(post.content)}</div>
         </article>
       ) : (
         'post'

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
-    <main className='container mx-auto px-8 py-24'>
+    <main className='container mx-auto px-8 lg:px-20 py-24'>
       <h1 className='text-6xl font-bold mb-2 text-center'>Hey, I'm Jordan.</h1>
       <h6 className='text-base text-center'>
         A creative developer based in Edmonton, Alberta.

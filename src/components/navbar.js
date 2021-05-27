@@ -8,7 +8,7 @@ export default function Navbar() {
   };
   return (
     <header>
-      <nav className='navbar container mx-auto px-8 py-6 md:py-8 flex flex-wrap justify-between'>
+      <nav className='navbar container mx-auto px-8 lg:px-20 py-6 md:py-8 flex flex-wrap justify-between'>
         <div className='navbar-brand font-bold'>
           <NavLink to='/'>@retroblvk</NavLink>
         </div>

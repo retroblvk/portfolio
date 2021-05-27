@@ -24,7 +24,7 @@ export default function App() {
             />
           </Switch>
         </div>
-        <footer className='container mx-auto px-8 py-4'>
+        <footer className='container mx-auto px-20 py-4'>
           <small>&copy; Portfolio made with {'<3'}</small>
         </footer>
       </div>

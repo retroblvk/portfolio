@@ -95,3 +95,19 @@ body {
     color: initial;
   }
 }
+
+.card-body {
+}
+/* colors */
+
+.react {
+  background: #61dbfb;
+}
+
+.strapi {
+  background: #8c4bff;
+}
+
+.tailwind {
+  background: #06b6d4;
+}
