@@ -23,7 +23,11 @@ export default function Blog() {
             <Link to={'/posts/' + post.id} key={index}>
               <div className='card'>
                 <img
-                  src={strapi_url + post.postImage.formats.small.url}
+                  src={
+                    process.env.NODE_ENV === 'development'
+                      ? strapi_url + post.postImage.formats.small.url
+                      : post.postImage.formats.small.url
+                  }
                   alt=''
                   className=''
                 />
