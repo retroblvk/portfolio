@@ -6,15 +6,15 @@ export default function SinglePost({ props }) {
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    Axios.get(strapi_url + '/posts/' + props.match.params.id)
+    return Axios.get(strapi_url + '/posts/' + props.match.params.id)
       .then((response) => {
         console.log(response.data);
         setPost(response.data);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [props]);
   return (
-    <main className='container mx-auto px-24 py-2'>
+    <main className='container mx-auto px-8 py-2'>
       {post ? (
         <article className='post'>
           <img

@@ -8,7 +8,6 @@ export default function Blog() {
     document.title = 'retroblvk | Blog';
     Axios.get(strapi_url + '/posts')
       .then((response) => {
-        console.log(response.data);
         setPosts(response.data);
       })
       .catch((err) => {
@@ -21,8 +20,8 @@ export default function Blog() {
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 sm:gap-1 md:gap-4 pt-8'>
         {posts &&
           posts.map((post, index) => (
-            <Link to={'/posts/' + post.id}>
-              <div className='card' key={index}>
+            <Link to={'/posts/' + post.id} key={index}>
+              <div className='card'>
                 <img
                   src={strapi_url + post.postImage.formats.small.url}
                   alt=''
