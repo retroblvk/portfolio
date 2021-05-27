@@ -22,7 +22,7 @@ export default function Portfolio() {
         {projects &&
           projects.map((project, index) => (
             <div className='card shadow-2xl rounded-lg' key={index}>
-              <h1 className='  text-lg px-4 py-4 mb-2 font-bold'>
+              <h1 className='bg-custom-purple rounded-t-lg card-header text-lg px-4 py-4 font-bold'>
                 {project.title}
               </h1>
               <img

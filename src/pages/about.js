@@ -20,7 +20,7 @@ export default function About() {
             will speed up api development by using strapi which is my favorite
             headless cms at the moment.
           </p>
-          <Link to='/portfolio' className='border-b-2 border-gray-300 pb-1'>
+          <Link to='/portfolio' className='border-custom-purple py-1'>
             Portfolio
           </Link>
         </div>

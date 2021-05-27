@@ -10,7 +10,9 @@ export default function Navbar() {
     <header>
       <nav className='navbar container mx-auto px-8 lg:px-20 py-6 md:py-8 flex flex-wrap justify-between'>
         <div className='navbar-brand font-bold'>
-          <NavLink to='/'>@retroblvk</NavLink>
+          <NavLink to='/'>
+            <span className='custom-purple'>@</span>retroblvk
+          </NavLink>
         </div>
         <div className='menu-icon' onClick={handleClick}>
           <span></span>
@@ -23,7 +25,7 @@ export default function Navbar() {
           <li className='md:mr-4'>
             <NavLink
               to='/'
-              activeClassName='border-b-2 border-grey-300'
+              activeClassName='border-custom-purple'
               exact
               onClick={handleClick}
             >
@@ -33,7 +35,7 @@ export default function Navbar() {
           <li className='md:mr-4'>
             <NavLink
               to='/about'
-              activeClassName='border-b-2 border-grey-300'
+              activeClassName='border-custom-purple'
               exact
               onClick={handleClick}
             >
@@ -42,7 +44,7 @@ export default function Navbar() {
           </li>
           <li className='md:mr-4'>
             <NavLink
-              activeClassName='border-b-2 border-grey-300'
+              activeClassName='border-custom-purple'
               to='/portfolio'
               onClick={handleClick}
             >
@@ -51,7 +53,7 @@ export default function Navbar() {
           </li>
           <li>
             <NavLink
-              activeClassName='border-b-2 border-grey-300'
+              activeClassName='border-custom-purple'
               to='/blog'
               onClick={handleClick}
             >

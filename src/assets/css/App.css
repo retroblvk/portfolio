@@ -11,6 +11,8 @@
 
 html,
 body {
+  background: #0e1212;
+  color: #fff;
   font-family: 'roboto', sans-serif;
 }
 
@@ -35,7 +37,7 @@ body {
 }
 
 .menu-icon span {
-  background: #000;
+  background: #fff;
   height: 0.2rem;
   width: 33px;
   margin-bottom: 0.4rem;
@@ -47,7 +49,7 @@ body {
 }
 
 .navbar-nav {
-  background: #000;
+  background: rgba(14, 18, 18, 0.85);
   flex-direction: column;
   width: 100%;
   justify-content: center;
@@ -90,13 +92,11 @@ body {
     padding: initial;
     height: initial;
   }
-
-  .navbar-nav a {
-    color: initial;
-  }
 }
 
 .card-body {
+  background: #fff;
+  color: #000;
 }
 /* colors */
 
@@ -110,4 +110,16 @@ body {
 
 .tailwind {
   background: #06b6d4;
+}
+
+.border-custom-purple {
+  border-bottom: 2px solid #682ae9;
+}
+
+.custom-purple {
+  color: #682ae9;
+}
+
+.bg-custom-purple {
+  background: #682ae9;
 }
