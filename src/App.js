@@ -4,6 +4,8 @@ import Navbar from './components/navbar';
 import Home from './pages/home';
 import About from './pages/about';
 import Portfolio from './pages/portfolio';
+import Blog from './pages/blog';
+import SinglePost from './pages/SinglePost';
 
 export default function App() {
   return (
@@ -15,6 +17,11 @@ export default function App() {
             <Route exact path='/' component={Home} />
             <Route path='/about' component={About} />
             <Route path='/portfolio' component={Portfolio} />
+            <Route path='/blog' component={Blog} />
+            <Route
+              path='/posts/:id'
+              render={(props) => <SinglePost props={props} />}
+            />
           </Switch>
         </div>
         <footer className='container mx-auto px-8 py-4'>

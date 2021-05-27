@@ -9,12 +9,12 @@ export default function About() {
         </div>
         <div>
           <h1 className='text-4xl font-bold mb-4'>About</h1>
-          <p className='mb-2'>
-            My name is Ajani Myers, I'm currently a full time student at NAIT,
-            but in my down time you can catch me working on projects, at coding
-            workshops, or spending time with my friends organizing.
+          <p className='mb-2 max-w-prose'>
+            My name is Jordan Santoro, I'm currently a full time student at
+            NAIT, but in my down time you can catch me working on projects, at
+            coding workshops, or spending time with my friends organizing.
           </p>
-          <p className='mb-4'>
+          <p className='mb-4 max-w-prose'>
             If you're curious about the stack i use to develop applications, I
             currently use PostgreSQL, NodeJS, Express, and React. I at times
             will speed up api development by using strapi which is my favorite

@@ -6,7 +6,7 @@ export default function Portfolio() {
   const [projects, setProjects] = useState(null);
   useEffect(() => {
     document.title = 'retroblvk | Portfolio';
-    console.log(strapi_url);
+
     Axios.get(strapi_url + '/projects')
       .then((response) => {
         setProjects(response.data);
@@ -23,11 +23,12 @@ export default function Portfolio() {
           projects.map((project, index) => (
             <div className='card' key={index}>
               <img
-                src={strapi_url + project.projectImage[0].formats.medium.url}
+                src={strapi_url + project.projectImage[0].formats.small.url}
                 alt=''
-                className='mb-2'
               />
-              <h1 className='text-lg  mb-4'>{project.title}</h1>
+              <h1 className='text-lg  mb-4 bg-black text-white px-4 py-4 font-bold'>
+                {project.title}
+              </h1>
               <ul className='flex'>
                 {project.tags &&
                   project.tags.map((tag, tagIndex) => {

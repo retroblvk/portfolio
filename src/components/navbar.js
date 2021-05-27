@@ -22,6 +22,16 @@ export default function Navbar() {
         >
           <li className='md:mr-4'>
             <NavLink
+              to='/'
+              activeClassName='border-b-2 border-grey-300'
+              exact
+              onClick={handleClick}
+            >
+              Home
+            </NavLink>
+          </li>
+          <li className='md:mr-4'>
+            <NavLink
               to='/about'
               activeClassName='border-b-2 border-grey-300'
               exact
@@ -40,7 +50,13 @@ export default function Navbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to='/blog'>Blog</NavLink>
+            <NavLink
+              activeClassName='border-b-2 border-grey-300'
+              to='/blog'
+              onClick={handleClick}
+            >
+              Blog
+            </NavLink>
           </li>
         </ul>
       </nav>

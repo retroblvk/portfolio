@@ -34,10 +34,6 @@ body {
   visibility: hidden;
 }
 
-p {
-  max-width: 500px;
-}
-
 .menu-icon span {
   background: #000;
   height: 0.2rem;
