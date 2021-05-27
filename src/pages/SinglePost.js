@@ -14,7 +14,7 @@ export default function SinglePost({ props }) {
       .catch((err) => console.log(err));
   }, [props]);
   return (
-    <main className='container mx-auto md:px-20 pt-4'>
+    <main className='container mx-auto px-8 lg:px-20  pt-4'>
       {post ? (
         <article className='post'>
           <div>{parse(post.content)}</div>
