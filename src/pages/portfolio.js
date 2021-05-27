@@ -23,7 +23,11 @@ export default function Portfolio() {
           projects.map((project, index) => (
             <div className='card' key={index}>
               <img
-                src={strapi_url + project.projectImage[0].formats.small.url}
+                src={
+                  process.env.NODE_ENV === 'development'
+                    ? strapi_url + project.projectImage[0].formats.small.url
+                    : project.projectImage[0].formats.small.url
+                }
                 alt=''
               />
               <h1 className='text-lg  mb-4 bg-black text-white px-4 py-4 font-bold'>

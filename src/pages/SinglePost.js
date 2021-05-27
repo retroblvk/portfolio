@@ -18,7 +18,11 @@ export default function SinglePost({ props }) {
       {post ? (
         <article className='post'>
           <img
-            src={strapi_url + post.postImage.formats.small.url}
+            src={
+              process.env.NODE_ENV === 'development'
+                ? strapi_url + post.postImage.formats.small.url
+                : post.postImage.formats.small.url
+            }
             alt=''
             className='md:float-left  mr-8 w-full md:w-6/12 lg:w-5/12 mb-3'
           />
