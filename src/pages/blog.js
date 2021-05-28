@@ -29,9 +29,9 @@ export default function Blog() {
                       : post.postImage.formats.small.url
                   }
                   alt=''
-                  className='rounded-t-lg'
+                  className=''
                 />
-                <h1 className='text-lg rounded-b-lg mb-8 bg-custom-purple text-white px-4 py-4 font-bold'>
+                <h1 className='text-lg bg-black mb-8  text-white px-4 py-6 font-bold'>
                   {post.title}
                 </h1>
               </div>
