@@ -21,7 +21,7 @@ export default function Portfolio() {
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 sm:gap-1 md:gap-4 pt-8'>
         {projects ? (
           projects.map((project, index) => (
-            <div className='card shadow-2xl rounded-lg' key={index}>
+            <div className='card shadow-2xl rounded-lg mb-2' key={index}>
               <h1 className='bg-custom-purple  card-header text-lg px-4 py-4 font-bold h-14'>
                 {project.title}
               </h1>
