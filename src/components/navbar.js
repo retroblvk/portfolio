@@ -22,44 +22,40 @@ export default function Navbar() {
         <ul
           className={menuState ? 'flex navbar-nav open-nav' : 'flex navbar-nav'}
         >
-          <li className='md:mr-4'>
-            <NavLink
-              to='/'
-              activeClassName='border-custom-purple'
-              exact
-              onClick={handleClick}
-            >
-              Home
-            </NavLink>
-          </li>
-          <li className='md:mr-4'>
-            <NavLink
-              to='/about'
-              activeClassName='border-custom-purple'
-              exact
-              onClick={handleClick}
-            >
-              About
-            </NavLink>
-          </li>
-          <li className='md:mr-4'>
-            <NavLink
-              activeClassName='border-custom-purple'
-              to='/portfolio'
-              onClick={handleClick}
-            >
-              Portfolio
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              activeClassName='border-custom-purple'
-              to='/blog'
-              onClick={handleClick}
-            >
-              Blog
-            </NavLink>
-          </li>
+          <NavLink
+            to='/'
+            activeClassName='border-custom-purple'
+            className='box-border md:mr-4 pb-0.5'
+            exact
+            onClick={handleClick}
+          >
+            <li>Home</li>
+          </NavLink>
+          <NavLink
+            to='/about'
+            activeClassName='border-custom-purple'
+            className='box-border md:mr-4 pb-0.5'
+            exact
+            onClick={handleClick}
+          >
+            <li>About</li>
+          </NavLink>
+          <NavLink
+            activeClassName='border-custom-purple'
+            className='box-border md:mr-4 pb-0.5'
+            to='/portfolio'
+            onClick={handleClick}
+          >
+            <li>Portfolio</li>
+          </NavLink>
+          <NavLink
+            activeClassName='border-custom-purple'
+            className='box-border md:mr-4 pb-0.5'
+            to='/blog'
+            onClick={handleClick}
+          >
+            <li>Blog</li>
+          </NavLink>
         </ul>
       </nav>
     </header>
