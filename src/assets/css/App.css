@@ -112,6 +112,18 @@ body {
   background: #06b6d4;
 }
 
+.html {
+  background: #e34c26;
+}
+
+.css {
+  background: #264de4;
+}
+
+.javascript {
+  background: #f0db4f;
+}
+
 .border-custom-purple {
   border-bottom: 2px solid #682ae9;
 }

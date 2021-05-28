@@ -31,7 +31,7 @@ export default function Blog() {
                   alt=''
                   className=''
                 />
-                <h1 className='text-lg bg-black mb-8  text-white px-4 py-6 font-bold'>
+                <h1 className='text-lg border-custom-purple mb-8  text-white px-4 py-6 font-bold'>
                   {post.title}
                 </h1>
               </div>

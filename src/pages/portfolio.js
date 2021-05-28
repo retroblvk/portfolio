@@ -64,6 +64,33 @@ export default function Portfolio() {
                             {tag.name}
                           </li>
                         );
+                      } else if (tag.name.toLowerCase() === 'html') {
+                        return (
+                          <li
+                            key={tagIndex}
+                            className='mr-2 text-white html px-2 py-1 rounded'
+                          >
+                            {tag.name}
+                          </li>
+                        );
+                      } else if (tag.name.toLowerCase() === 'css') {
+                        return (
+                          <li
+                            key={tagIndex}
+                            className='mr-2 text-white css px-2 py-1 rounded'
+                          >
+                            {tag.name}
+                          </li>
+                        );
+                      } else if (tag.name.toLowerCase() === 'javascript') {
+                        return (
+                          <li
+                            key={tagIndex}
+                            className='mr-2 text-white javascript px-2 py-1 rounded'
+                          >
+                            {tag.name}
+                          </li>
+                        );
                       }
                       return <li key={tagIndex}>{tag.name}</li>;
                     })}

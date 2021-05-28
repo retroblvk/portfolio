@@ -1,6 +1,10 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(() => {
+    document.title = 'retroblvk | Home';
+  }, []);
   return (
     <main className='container mx-auto px-8 lg:px-20 py-24'>
       <h1 className='text-6xl font-bold mb-2 text-center'>

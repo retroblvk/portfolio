@@ -1,6 +1,10 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import image from './../assets/img/code.jpg';
 export default function About() {
+  useEffect(() => {
+    document.title = 'retroblvk | About';
+  }, []);
   return (
     <main className='container mx-auto px-8 md:px-20 '>
       <div className='md:flex'>

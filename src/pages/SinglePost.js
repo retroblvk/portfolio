@@ -11,6 +11,7 @@ export default function SinglePost({ props }) {
       .then((response) => {
         console.log(response.data);
         setPost(response.data);
+        document.title = `retroblvk | ${response.data.title}`;
       })
       .catch((err) => console.log(err));
   }, [props]);
