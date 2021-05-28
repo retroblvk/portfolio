@@ -21,7 +21,7 @@ export default function Blog() {
         {posts ? (
           posts.map((post, index) => (
             <Link to={'/posts/' + post.id} key={index}>
-              <div className='card'>
+              <div className='card mb-2'>
                 <img
                   src={
                     process.env.NODE_ENV === 'development'
