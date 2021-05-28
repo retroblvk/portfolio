@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Axios from 'axios';
 import strapi_url from './../helper';
 import parse from 'html-react-parser';
@@ -18,6 +19,9 @@ export default function SinglePost({ props }) {
       {post ? (
         <article className='post'>
           <div>{parse(post.content)}</div>
+          <Link to='/blog' className='custom-purple font-bold text-4xl'>
+            &#8592;
+          </Link>
         </article>
       ) : (
         'post'
