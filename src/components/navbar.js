@@ -24,8 +24,8 @@ export default function Navbar() {
         >
           <NavLink
             to='/'
-            activeClassName='border-custom-purple'
-            className='box-border md:mr-4 pb-0.5'
+            activeClassName='active'
+            className='md:mr-4'
             exact
             onClick={handleClick}
           >
@@ -33,24 +33,24 @@ export default function Navbar() {
           </NavLink>
           <NavLink
             to='/about'
-            activeClassName='border-custom-purple'
-            className='box-border md:mr-4 pb-0.5'
+            activeClassName='active'
+            className='box-border md:mr-4'
             exact
             onClick={handleClick}
           >
             <li>About</li>
           </NavLink>
           <NavLink
-            activeClassName='border-custom-purple'
-            className='box-border md:mr-4 pb-0.5'
+            activeClassName='active'
+            className='box-border md:mr-4 '
             to='/portfolio'
             onClick={handleClick}
           >
             <li>Portfolio</li>
           </NavLink>
           <NavLink
-            activeClassName='border-custom-purple'
-            className='box-border md:mr-4 pb-0.5'
+            activeClassName='active'
+            className='box-border md:mr-4'
             to='/blog'
             onClick={handleClick}
           >

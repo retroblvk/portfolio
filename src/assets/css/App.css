@@ -63,10 +63,11 @@ body {
 
 .navbar-nav li {
   padding-top: 2rem;
+  padding-bottom: 0.3rem;
 }
 
 .navbar-nav li:last-of-type {
-  padding-bottom: 2rem;
+  margin-bottom: 1.2rem;
 }
 
 .navbar-nav a {
@@ -134,6 +135,10 @@ body {
 
 .bg-custom-purple {
   background: #682ae9;
+}
+
+.active li {
+  border-bottom: 2px solid #682ae9;
 }
 
 /* Loader */
